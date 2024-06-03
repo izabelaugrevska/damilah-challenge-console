@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using SSISConsole.Data;
 
 namespace ConsoleApp
 {
@@ -235,43 +236,4 @@ namespace ConsoleApp
 
     }
 
-    public class Subject
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public int NumberOfWeeklyClasses { get; set; }
-        public List<Book> LiteratureUsed { get; set; }
-    }
-
-    public class Book
-    {
-        public int BookId { get; set; }
-        public string BookName { get; set; }
-        public int SubjectId { get; set; }
-    }
-
-    public class BookInfo
-    {
-        public string Title { get; set; }
-        public List<string> Authors { get; set; }
-        public List<string> Publishers { get; set; }
-        public int FirstPublishYear { get; set; }
-        public List<string> ISBNs { get; set; }
-        public int NumberOfPages { get; set; }
-        public string CoverUrl { get; set; }
-    }
-
-        public class CreateSubjectFromJsonDto
-    {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public int NumberOfWeeklyClasses { get; set; }
-        public List<CreateBookFromJsonDto> LiteratureUsed { get; set; }
-    }
-
-    public class CreateBookFromJsonDto
-    {
-        public string BookName { get; set; }
-    }
 }
