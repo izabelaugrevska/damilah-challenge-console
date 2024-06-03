@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "Geography",
+    "Description": "Geography class",
+    "NumberOfWeeklyClasses": 2,
+    "LiteratureUsed": [
+      {
+        "BookName": "Physical Geography"
+      }
+    ]
+  },
+  {
+    "Name": "History",
+    "Description": "History class",
+    "NumberOfWeeklyClasses": 2,
+    "LiteratureUsed": [
+      {
+        "BookName": "A history of the modern world"
+      }
+    ]
+  }
+]
