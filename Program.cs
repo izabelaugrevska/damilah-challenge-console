@@ -214,11 +214,9 @@ namespace ConsoleApp
             }
 
             var json = await File.ReadAllTextAsync(filePath);
-            Console.WriteLine($"Read JSON file content: {json}");
             var subjects = JsonSerializer.Deserialize<List<CreateSubjectFromJsonDto>>(json);
 
             var serializedSubjects = JsonSerializer.Serialize(subjects);
-            Console.WriteLine($"Serialized subjects: {serializedSubjects}");
 
             var content = new StringContent(serializedSubjects, Encoding.UTF8, "application/json");
             var response = await client.PostAsync("subject/import", content);

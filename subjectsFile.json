@@ -1,21 +1,21 @@
 [
   {
-    "Name": "Geography",
-    "Description": "Geography class",
+    "Name": "German",
+    "Description": "German class",
     "NumberOfWeeklyClasses": 2,
     "LiteratureUsed": [
       {
-        "BookName": "Physical Geography"
+        "BookName": "101 Conversations in Simple German"
       }
     ]
   },
   {
-    "Name": "History",
-    "Description": "History class",
+    "Name": "Sociology",
+    "Description": "Sociology class",
     "NumberOfWeeklyClasses": 2,
     "LiteratureUsed": [
       {
-        "BookName": "A history of the modern world"
+        "BookName": "Sociology"
       }
     ]
   }
